@@ -250,6 +250,9 @@ int Partition(int * A, int start, int end){
     return partition_index;
 }
 
+
+
+
 void quickSort(int *A ,int start, int end){
     if(start < end){
         int partition_index = Partition(A,start,end);
@@ -258,6 +261,8 @@ void quickSort(int *A ,int start, int end){
         quickSort(A,partition_index+1,end);
     }
 }
+
+
 
 int main(){
     int A[] = {8,7,6,5,4,3,2,1,0};
