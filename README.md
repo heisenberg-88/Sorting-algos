@@ -36,3 +36,48 @@ int main(){
 
 
 ```
+
+
+
+
+
+## Bubble sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
+
+```cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void bubbleSort(int A[],int n){
+    int i,j;
+    bool swapped ;
+    
+    for(i=0;i<n-1;i++){
+        swapped = false;
+        for(j=0;j<n-i-1;j++){
+
+            if(A[j]>A[j+1]){
+                swap( A[j] , A[j+1] );  //swap if next element is smaller than current
+                swapped = true;  
+            }
+        }
+
+        if(swapped = false){
+            /// if there were no swaps in last iteration , then the array is already sorted
+            break;
+        }
+    }
+
+}
+
+int main(){
+    int A[] = {2,6,3,8,1,0,1};
+    bubbleSort(A,7);
+
+    for(auto i:A){
+        cout<<i<<" ";       // 0 1 1 2 3 6 8
+    }
+
+}
+
+```
