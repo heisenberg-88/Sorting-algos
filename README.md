@@ -1,4 +1,4 @@
-# Sorting-algos
+# :european_castle: Sorting-algos :european_castle:
 All sorting algos
 
 
@@ -10,7 +10,7 @@ All sorting algos
 
 
 
-## Selection sort algorithm ------------------------- ( Big O: best/worst = O(N²) )
+## :radioactive: Selection sort algorithm ------------------------- ( Big O: best/worst = O(N²) )
 ![1_OA7a3OGWmGMRJQmwkGIwAw](https://user-images.githubusercontent.com/75937169/136012320-45321c8d-9049-47c4-8770-72a00522d768.gif)
 
 ```cpp
@@ -50,7 +50,7 @@ int main(){
 
 
 
-## Bubble sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
+## :radioactive: Bubble sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
 
 ![1_LllBj5cbV91URiuzAB-xzw](https://user-images.githubusercontent.com/75937169/136015389-1bedac01-0dd7-4e4d-819a-45dd775f9ba8.gif)
 
@@ -97,7 +97,7 @@ int main(){
 
 
 
-## Insertion sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
+## :radioactive: Insertion sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
 
 ![1_onU9OmVftR5WeoLWh14iZw](https://user-images.githubusercontent.com/75937169/136017639-559ff09d-620d-4d46-a851-a2a4cdde5abc.gif)
 
@@ -142,7 +142,7 @@ int main(){
 ```
 
 
-## Merge sort algorithm ------------------------- ( Big O: O(N log N) )
+## :radioactive: Merge sort algorithm ------------------------- ( Big O: O(N log N) )
 
 ![Merge-sort-example-300px](https://user-images.githubusercontent.com/75937169/136034590-43c6acca-b073-4b06-b438-2931ab2b8578.gif)
 
@@ -223,7 +223,7 @@ int main(){
 
 
 
-## Quicksort algorithm ------------------------- ( Big O: best = O(N log N), worst O(N²) )
+## :radioactive: Quicksort algorithm ------------------------- ( Big O: best = O(N log N), worst O(N²) )
 
 ![1_hk2TL8m8Kn1TVvewAbAclQ](https://user-images.githubusercontent.com/75937169/136071169-e9a0200b-3b6e-4b1f-bd64-8a9988f35c69.gif)
 
