@@ -1,6 +1,11 @@
 # Sorting-algos
 All sorting algos
 
+
+![jfmkuhv1iskzxe763g8k](https://user-images.githubusercontent.com/75937169/136035947-2e15a8ab-2643-4c85-9c59-347d26917d53.gif)
+
+
+
 ## Selection sort algorithm ------------------------- ( Big O: best/worst = O(N²) )
 ![1_OA7a3OGWmGMRJQmwkGIwAw](https://user-images.githubusercontent.com/75937169/136012320-45321c8d-9049-47c4-8770-72a00522d768.gif)
 
