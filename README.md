@@ -220,3 +220,54 @@ int main(){
 }
 
 ```
+
+
+
+## Quicksort algorithm ------------------------- ( Big O: best = O(N log N), worst O(N²) )
+
+![1_hk2TL8m8Kn1TVvewAbAclQ](https://user-images.githubusercontent.com/75937169/136071169-e9a0200b-3b6e-4b1f-bd64-8a9988f35c69.gif)
+
+
+
+```cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+
+// to get a point where all elements to LEFT are smaller than pivot & elements to RIGHT are larger
+int Partition(int * A, int start, int end){
+    int pivot = A[end];
+    int partition_index = start;  // start partition index as start
+
+    for(int i=start;i<end;i++){
+        if(A[i]<=pivot){
+            swap(A[i],A[partition_index]);    // put all elements less than A[partition_index] to the left of it
+            partition_index++;                // increment partition_index
+        }
+    }
+
+    swap(A[partition_index] ,A[end]);  // swap pivot with partition_index
+    return partition_index;
+}
+
+void quickSort(int *A ,int start, int end){
+    if(start < end){
+        int partition_index = Partition(A,start,end);
+
+        quickSort(A,start,partition_index-1);
+        quickSort(A,partition_index+1,end);
+    }
+}
+
+int main(){
+    int A[] = {8,7,6,5,4,3,2,1,0};
+
+    quickSort(A,0,8);
+
+    for(auto ele:A){
+        cout<<ele<<" ";
+    }
+}
+
+```
+
