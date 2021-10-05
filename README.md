@@ -131,3 +131,83 @@ int main(){
 }
 
 ```
+
+
+## Merge sort algorithm ------------------------- ( Big O: O(N log N) )
+
+![Merge-sort-example-300px](https://user-images.githubusercontent.com/75937169/136034590-43c6acca-b073-4b06-b438-2931ab2b8578.gif)
+
+```cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+void merge(int A[],int l,int m,int r){
+
+    // size of two aray to merge
+    int n1 = m-l+1;
+    int n2 = r-m;
+
+
+    // make left & right arrays
+    int larr[n1] , rarr[n2];
+    for(int i=0;i<n1;i++){
+        larr[i] = A[l+i];
+    }
+    for(int j=0;j<n2;j++){
+        rarr[j] = A[m+1+j];
+    }
+
+    int i=0;
+    int j=0;
+    int k=l;
+
+    // NOW MERGING STARTS
+    while(i<n1 && j<n2){
+        if(larr[i]<=rarr[j]){
+            A[k] = larr[i];            // if larr[] element is smaller
+            i++;
+        }else{
+            A[k] = rarr[j];            // if rarr[] element is smaller
+            j++;
+        }
+        k++;
+    }
+    while(i<n1){
+        A[k] = larr[i];             // extra elements left in larr[]
+        i++;
+        k++;
+    }
+    while(j<n2){
+        A[k] = rarr[j];             // extra elements left in rarr[]
+        j++;
+        k++;
+    }
+
+}
+
+void mergeSort(int A[],int l,int r){
+    if(r>l){
+        int m = l+ (r-l)/2;
+
+        mergeSort(A,l,m);
+        mergeSort(A,m+1,r);
+        
+        merge(A,l,m,r);
+    }
+    
+}
+
+int main(){
+    int A[] = {2,6,3,8,1,0,1};
+
+    mergeSort(A,0,6);
+
+    for(auto ele:A){
+        cout<<ele<<" "; 
+    }
+
+}
+
+```
