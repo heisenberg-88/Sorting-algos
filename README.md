@@ -288,3 +288,132 @@ int main(){
 
 ```
 
+
+
+
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+. <br />
+
+. <br />
+. <br />
+
+*** EXTRAS ***
+
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+void selectsort(vector<int> &v,int n){
+
+	for(int i=0;i<n-1;i++){
+		int imin = i;
+
+		for(int j=i+1;j<n;j++){
+			if(v[j]<v[i]){
+				imin = j;
+			}
+		}
+		swap(v[imin],v[i]);
+	}
+}
+
+void insertsort(vector<int> &v,int n){
+	int value,hole;
+
+	for(int i=1;i<n;i++){
+		value = v[i];
+		hole = i;
+
+		while(hole>0 && v[hole-1]>value){
+			v[hole] = v[hole-1];
+			hole--;
+		}
+		v[hole] = value;
+	}
+}
+
+void merge(vector<int>& v, int l, int r, int m){
+	int n1 = m-l+1;
+	int n2 = r-m;
+
+	int left[n1];
+	int right[n2];
+
+	for(int i=0;i<n1;i++){
+		left[i] = v[i+l];
+	}
+	for(int j=0;j<n2;j++){
+		right[j] = v[m+j+1];
+	}
+
+	int i = 0;
+	int j = 0;
+	int k = l;
+	
+	//merging starts
+	while(i<n1 && j<n2){
+		if(left[i]<=right[j]){
+			v[k] = left[i];
+			i++;
+			k++;
+		}
+		else{
+			v[k] = right[j];
+			j++;
+			k++;
+		}
+	}
+
+	while(i<n1){
+		v[k] = left[i];
+		i++;
+		k++;
+	}
+	while(j<n2){
+		v[k] = right[j];
+		j++;
+		k++;
+	}
+
+}
+void mergesort(vector<int>&v, int l, int r){
+	if(l<r){
+		int mid = l+ (r-l)/2;
+
+		mergesort(v,l,mid);
+		mergesort(v,mid+1,r);
+
+		merge(v,l,r,mid);
+	}
+}
+
+int main(){
+	vector<int> v = {9,8,7,6,5,4,3,21};
+	int n = 8;
+	// selectsort(v,n);
+	// insertsort(v,n);
+	mergesort(v,0,n-1);
+	for(auto i:v){
+		cout<<i<<endl;
+	}
+}
+
+```
