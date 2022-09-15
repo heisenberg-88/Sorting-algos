@@ -8,7 +8,11 @@ All sorting algos
 
 
 ## :radioactive: Selection sort algorithm ------------------------- ( Big O: best/worst = O(N²) )
-![1_OA7a3OGWmGMRJQmwkGIwAw](https://user-images.githubusercontent.com/75937169/136012320-45321c8d-9049-47c4-8770-72a00522d768.gif)
+
+
+
+https://user-images.githubusercontent.com/75937169/190440895-66632489-6b2b-40d9-a245-bd94059ad065.mp4
+
 
 ```cpp
 
