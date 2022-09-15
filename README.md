@@ -102,7 +102,11 @@ int main(){
 
 ## :radioactive: Insertion sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
 
-![1_onU9OmVftR5WeoLWh14iZw](https://user-images.githubusercontent.com/75937169/136017639-559ff09d-620d-4d46-a851-a2a4cdde5abc.gif)
+
+
+https://user-images.githubusercontent.com/75937169/190439703-22aa0eaf-015b-4cc6-bd34-3e63a26004f0.mp4
+
+
 
 
 ```cpp
