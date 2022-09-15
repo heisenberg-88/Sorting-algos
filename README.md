@@ -164,7 +164,11 @@ int main(){
 
 ## :radioactive: Merge sort algorithm ------------------------- ( Big O: O(N log N) )
 
-![Merge-sort-example-300px](https://user-images.githubusercontent.com/75937169/136034590-43c6acca-b073-4b06-b438-2931ab2b8578.gif)
+
+https://user-images.githubusercontent.com/75937169/190441981-8959e7ca-ac7c-476a-b078-d4833619c730.mp4
+
+
+
 
 ```cpp
 
