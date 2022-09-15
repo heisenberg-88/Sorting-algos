@@ -52,7 +52,11 @@ int main(){
 
 ## :radioactive: Bubble sort algorithm ------------------------- ( Big O: best = O(N), worst = O(N²) )
 
-![1_LllBj5cbV91URiuzAB-xzw](https://user-images.githubusercontent.com/75937169/136015389-1bedac01-0dd7-4e4d-819a-45dd775f9ba8.gif)
+
+
+https://user-images.githubusercontent.com/75937169/190440350-6841ab6a-bed8-430e-bb85-6da780e4958d.mp4
+
+
 
 
 ```cpp
