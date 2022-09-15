@@ -253,7 +253,10 @@ int main(){
 
 ## :radioactive: Quicksort algorithm ------------------------- ( Big O: best = O(N log N), worst O(N²) )
 
-![1_hk2TL8m8Kn1TVvewAbAclQ](https://user-images.githubusercontent.com/75937169/136071169-e9a0200b-3b6e-4b1f-bd64-8a9988f35c69.gif)
+
+
+
+https://user-images.githubusercontent.com/75937169/190442511-1a70f7f3-34b2-476f-8170-425c01253d84.mp4
 
 
 
